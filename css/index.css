@@ -79,7 +79,7 @@ textarea::placeholder{
     background-color: #412F59;
 }
 
-.desencriptar{
+.decryptbutton{
     background-color: #F2F2F2;
     color: #412F59;
     border:none;
@@ -91,11 +91,11 @@ textarea::placeholder{
     cursor: pointer; 
 }
 
-.desencriptar:hover{
+.decryptbutton:hover{
     background-color: #9F8FBF;
 }
 
-.desencriptador{
+.decrypttext{
     background-color:#F2D399;
     width: 90%;
     height: 100%;
@@ -144,9 +144,11 @@ p + p{
     }
 
     .copy:hover{
-        background-color: #9F8FBF
+        background-color: #412F59;
+        color:#9F8FBF;
     }
 
+    /* diseño para tablet */
     @media screen and (max-width:1024px) {
         body{
             margin: 3%;
@@ -189,11 +191,11 @@ p + p{
             align-items: center;
         }
 
-        .desencriptador{
+        .decrypttext{
             width: 95%;
         }
 
-        .desencriptador img{
+        .decrypttext img{
             display: none;
         }
 
@@ -201,7 +203,6 @@ p + p{
             width: 500px;
             max-height: 200px;
             overflow: scroll;
-            word-break: break-all;
             margin-bottom: 5%;
         }
 
@@ -216,73 +217,7 @@ p + p{
         }
     }
 
-    
-    /* @media screen and (max-width:768px) {
-        body{
-            margin: 6%;
-           }
-    
-        main{
-            overflow:scroll ;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .encrypttextinput{
-            display: flex;
-        }
-        
-        textarea{
-            width: 95%;
-            height: 281px;
-            margin-bottom:2%;
-            font-size: 30px;
-        }
-
-        .alert{
-            font-size: 18px;
-            align-items: flex-start;
-            width: fit-content;
-        }
-
-        .buttons{
-            align-items: center;
-        }
-        
-        .left{
-            margin-top: 40px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .desencriptador{
-            width: 95%;
-        }
-
-        .desencriptador img{
-            display: none;
-        }
-
-        .showText{
-            width: 500px;
-            max-height: 200px;
-            overflow: scroll;
-            word-break: break-all;
-            margin-bottom: 5%;
-        }
-
-        p{
-            width: 100%; 
-            font-size: 30px;
-            text-align: center;
-        }
-    
-        p + p{
-            font-size: 19px;
-        }
-    } */
-
+    /* diseño para celular */
     @media screen and (max-width:480px) {        
         body{
             margin: 6%;
@@ -292,7 +227,7 @@ p + p{
             font-size: 20px;
         }
 
-        .encryptbutton , .desencriptar , .copy{
+        .encryptbutton , .decryptbutton , .copy{
             font-size: 20px;
         }
         
