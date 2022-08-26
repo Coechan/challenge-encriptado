@@ -139,9 +139,10 @@ p + p{
     .copy:hover{
         background-color: #0A3871
     }
-    @media screen and (max-width:768px) {
+
+    @media screen and (max-width:1024px) {
         body{
-            margin: 30px;
+            margin: 3%;
            }
     
         main{
@@ -205,7 +206,77 @@ p + p{
         }
     }
 
+    
+    /* @media screen and (max-width:768px) {
+        body{
+            margin: 6%;
+           }
+    
+        main{
+            overflow:scroll ;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .encrypttextinput{
+            display: flex;
+        }
+        
+        textarea{
+            width: 95%;
+            height: 281px;
+            margin-bottom:2%;
+            font-size: 30px;
+        }
+
+        .alert{
+            font-size: 18px;
+            align-items: flex-start;
+            width: fit-content;
+        }
+
+        .buttons{
+            align-items: center;
+        }
+        
+        .left{
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .desencriptador{
+            width: 95%;
+        }
+
+        .desencriptador img{
+            display: none;
+        }
+
+        .showText{
+            width: 500px;
+            max-height: 200px;
+            overflow: scroll;
+            word-break: break-all;
+            margin-bottom: 5%;
+        }
+
+        p{
+            width: 100%; 
+            font-size: 30px;
+            text-align: center;
+        }
+    
+        p + p{
+            font-size: 19px;
+        }
+    } */
+
     @media screen and (max-width:480px) {        
+        body{
+            margin: 6%;
+        }
         textarea{
             height: 218px;
             font-size: 20px;
