@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <title>Desafio 1 - Logica</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="./images/Vector.png" alt="a">
+    </header>
+
+    <main>
+        <div class="rigth">
+            <div class="encrypttextinput">
+                <textarea id="textinput" placeholder="Inserte su texto aqui" type="text" style="text-transform:lowercase" rows="11" cols="42"></textarea>
+                <p class="alert">! Solo letras minisculas y sin acentos</p>
+            </div>
+
+            <div class="buttons">
+                <button id="encrypt" class="encryptbutton" type="button">Encriptar</button>
+                <button id="decrypt" class="desencriptar" type="button">Desencriptar</button>
+            </div>
+         </div>
+
+        <div class="left">
+            <div class="desencriptador">
+                <img id="girl" src="./images/Muñeco.png" alt="chica buscando con lupa">
+                <div class="showText" id="scrollBox">
+                    <p id="mesaje">Ningun mensaje fue encontrado</p>
+                    <p id="help">Ingresa el texto que quieres encriptar o desencriptar</p>
+                </div>
+                <button id="copyButton" class="copy" type="button">Copiar</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/encriptador.js"></script>
+</body>
+</html>
