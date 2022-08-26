@@ -54,7 +54,7 @@ textarea{
     font-family: 'Inter';
     padding: 20px;
     font-size:25px ;
-    width: 280px;
+    width: 70%;
     font-weight: 400;
     border: none;
     border-radius: 1rem;
@@ -70,7 +70,7 @@ textarea{
     color: #0A3871;
     border:none;
     padding: 20px;
-    width: 280px;
+    width: 70%;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -155,7 +155,7 @@ p + p{
         }
         
         textarea{
-            width: 675px;
+            width: 95%;
             height: 281px;
             margin-bottom:2%;
             font-size: 30px;
@@ -195,7 +195,7 @@ p + p{
         }
 
         p{
-            width: 500px;
+            width: 100%; 
             font-size: 30px;
             text-align: center;
         }
@@ -207,23 +207,26 @@ p + p{
 
     @media screen and (max-width:480px) {        
         textarea{
-            width: 338px;
             height: 218px;
             font-size: 20px;
         }
 
         .encryptbutton , .desencriptar , .copy{
             font-size: 20px;
-            width: 159px;
         }
         
+        .buttons{
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            gap:15px;
+        }
         .showText{
             width: 320px;
             max-height: 200px;
         }
 
         p{
-            width: 310px;
             font-size: 20px;
         }
 
