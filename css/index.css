@@ -1,14 +1,19 @@
 
 body{
-    background-color:#F3F5FC;
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 50px 20px 40px 84px;
+    background-color:#BDB8D9;
+    font-family: 'Montserrat', sans-serif;
+    margin: 50px 20px 50px 84px;
 }
 
 main{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.rigth , .left{
+    margin: 0 3%;
+    width: 45%;
 }
 
 .encrypttextinput{
@@ -19,26 +24,31 @@ main{
 }
 
 textarea{
+    font-family: 'Montserrat';
     border:none;
-    color:#0A3871;
-    background-color: #F3F5FC;
+    color: #412F59;
+    background-color: #BDB8D9;
     padding: 2%;
-    margin-bottom: 20%; 
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
+    margin-bottom: 10%; 
+    font-weight: 600;
     font-size: 32px;
     resize: none;
 }
 
 .alert {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 20px;
     line-height: 150%;
-    color: #495057;
+    color: #412F59;
     opacity: 0.8;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
 }
 
 .buttons{
@@ -49,9 +59,8 @@ textarea{
 }
 
 .encryptbutton{
-    background-color: #609ED4;
-    color: white;
-    font-family: 'Inter';
+    background-color: #9F8FBF;
+    color: #F2F2F2;
     padding: 20px;
     font-size:25px ;
     width: 70%;
@@ -62,17 +71,15 @@ textarea{
 }
 
 .encryptbutton:hover{
-    background-color: #0A3871
+    background-color: #412F59;
 }
 
 .desencriptar{
-    background-color: #AAB2D5;
-    color: #0A3871;
+    background-color: #F2F2F2;
+    color: #412F59;
     border:none;
     padding: 20px;
     width: 70%;
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400;
     font-size: 25px;
     border-radius: 1rem;
@@ -80,11 +87,11 @@ textarea{
 }
 
 .desencriptar:hover{
-    background-color: #757FB2;
+    background-color: #9F8FBF;
 }
 
 .desencriptador{
-    background-color: white;
+    background-color:#F2D399;
     width: 90%;
     height: 100%;
     border-radius: 32px;
@@ -99,8 +106,6 @@ textarea{
 }
 
 .showText{
-    font-family: 'Inter';
-    font-style: normal;
     font-weight: 400; 
     width: 400px; 
     max-height: 600px;
@@ -109,24 +114,19 @@ textarea{
 }
 
 p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
+    font-weight: 800;
     font-size: 28px;
+    color: #412F59;
 
 }
 
 p + p{
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 20px;
 }
 
 .copy{
-    background-color: #609ED4;
-    color: white;
-    font-family: 'Inter';
+    background-color: #BDB8D9;
+    color: #412F59;
     padding: 20px;
     font-size:25px ;
     width: 280px;
@@ -139,13 +139,16 @@ p + p{
     }
 
     .copy:hover{
-        background-color: #0A3871
+        background-color: #9F8FBF
     }
 
     @media screen and (max-width:1024px) {
         body{
             margin: 3%;
            }
+        .rigth , .left{
+            width: 90%;
+        }
     
         main{
             overflow:scroll ;
