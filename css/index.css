@@ -35,6 +35,11 @@ textarea{
     resize: none;
 }
 
+textarea::placeholder{
+    color:#412F59;
+    opacity: 60%;
+}
+
 .alert {
     font-weight: 600;
     font-size: 20px;
@@ -125,7 +130,7 @@ p + p{
 }
 
 .copy{
-    background-color: #BDB8D9;
+    background-color: #9F8FBF;
     color: #412F59;
     padding: 20px;
     font-size:25px ;
